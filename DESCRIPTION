@@ -10,17 +10,10 @@ Depends: R (>= 2.10)
 LazyData: TRUE
 Imports: flipChartTests
          flipStandardCharts,
-         flipChart
 Remotes:
     Displayr/flipChartTests,
     Displayr/flipStandardCharts,
-    Displayr/flipChart,
-    Displayr/flipExampleData
 Suggests:
-    testthat,
-    flipExampleData,
-    plotly,
-    stringi,
-    flipChartBasics
+    testthat
 RoxygenNote: 7.1.1
 Encoding: UTF-8
