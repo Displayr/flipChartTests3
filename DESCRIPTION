@@ -1,0 +1,26 @@
+Package: flipChartTests3
+Type: Package
+Title: Visual unit tests for flipChart and flipStandardCharts
+Version: 1.0.0
+Author: Displayr <opensource@displayr.com>
+Maintainer: Displayr <opensource@displayr.com>
+Description: This package contains no code. It only used for testing.
+License: GPL-3
+Depends: R (>= 2.10)
+LazyData: TRUE
+Imports: flipChartTests
+         flipStandardCharts,
+         flipChart
+Remotes:
+    Displayr/flipChartTests,
+    Displayr/flipStandardCharts,
+    Displayr/flipChart,
+    Displayr/flipExampleData
+Suggests:
+    testthat,
+    flipExampleData,
+    plotly,
+    stringi,
+    flipChartBasics
+RoxygenNote: 7.1.1
+Encoding: UTF-8
