@@ -9,11 +9,11 @@ License: GPL-3
 Depends: R (>= 2.10)
 LazyData: TRUE
 Imports: flipChartTests
-         flipStandardCharts,
 Remotes:
     Displayr/flipChartTests,
-    Displayr/flipStandardCharts,
+    Displayr/flipStandardCharts
 Suggests:
-    testthat
+    testthat,
+    flipStandardCharts
 RoxygenNote: 7.1.1
 Encoding: UTF-8
