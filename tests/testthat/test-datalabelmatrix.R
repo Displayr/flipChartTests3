@@ -1,4 +1,6 @@
 context("Data label matrix")
+library(flipStandardCharts)
+library(flipChartTests)
 
 set.seed(12345)
 dat2d <- matrix(rnorm(35, 5, 4), 7, 5, dimnames = list(letters[1:7], LETTERS[1:5]))
