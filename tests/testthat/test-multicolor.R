@@ -55,7 +55,7 @@ for (ff in funcs)
         {
             # filestem is both the name of the image in accepted-snapshots
             # and the error msg expected on the output of devtools::test()
-            filestem <- paste("multicolor", tolower(ff), dat,
+            filestem <- paste(tolower(ff), dat,
                               names(test.args)[i], sep="-")
 
             test_that(filestem, {
