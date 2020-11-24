@@ -15,7 +15,8 @@ before_install:
   - sudo apt-get install -y libgdal-dev libproj-dev python-protobuf libprotoc-dev libprotobuf-dev libv8-dev librsvg2-dev libmpfr-dev libnlopt-dev
   - sudo apt-get install -y ttf-ancient-fonts fonts-noto ttf-mscorefonts-installer fonts-noto-cjk xfonts-unifont ttf-unifont	
   - echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections	
-  - sudo apt-get install -qq ttf-mscorefonts-installer	
+  - sudo apt-get install -qq ttf-mscorefonts-installer
+  - export flipStandardCharts_BRANCH_NAME=DS-3167
   - sudo fc-cache
   - Rscript tools/travis_run_before_install.R
 
@@ -26,7 +27,6 @@ r_packages:
 
 r_github_packages:
   - Displayr/flipDevTools
-  - Displayr/flipStandardCharts
   - Displayr/flipChartTests
 
 script:
