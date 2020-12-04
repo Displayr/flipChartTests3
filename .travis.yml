@@ -30,7 +30,7 @@ r_github_packages:
 script:
   - R CMD build --no-manual --no-build-vignettes --no-resave-data .
   - R CMD check --as-cran --no-manual --no-build-vignettes --no-tests *.tar.gz
-  - travis_wait 90 ./runTravisTests.sh
+  #- travis_wait 90 ./runTravisTests.sh
   # Prepare repository to push to github
   - git config user.name travisCISnapshots
   - git remote set-url origin "https://$WTOKEN@github.com/Displayr/flipChartTests3.git"
