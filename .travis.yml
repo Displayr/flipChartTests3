@@ -1,7 +1,7 @@
 language: r
-r:
-  - devel
 dist: bionic
+addons:
+    chrome: beta    
 cache: packages
 warnings_are_errors: false
 latex: false
@@ -29,6 +29,7 @@ r_packages:
 r_github_packages:
   - Displayr/flipDevTools
   - Displayr/flipStandardCharts
+  - Displayr/plotly@plotly-june2022
 
 script:
   - R CMD build --no-manual --no-build-vignettes --no-resave-data .
