@@ -6,6 +6,7 @@ cache: packages
 warnings_are_errors: false
 latex: false
 
+
 # install debian libraries to match R-servers
 # update pre-installed packages to latest versions
 before_install:
