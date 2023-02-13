@@ -36,7 +36,7 @@ script:
   - travis_wait 50 ./runTravisTests.sh
   # Prepare repository to push to github
   - git config user.name travisCISnapshots
-  - git remote set-url origin "https://$WTOKEN@github.com/Displayr/flipChartTests3.git"
+  - git remote set-url origin "https://oauth2:$WTOKEN@github.com/Displayr/flipChartTests3.git"
   - git add tests/testthat/snapshots
   - if [[ $(git status -s tests/testthat/snapshots) ]]; then git commit -m "Snapshots added from Travis build $TRAVIS_BUILD_NUMBER [ci skip]"; fi
   # Reconnect repository to master branch - this must happen AFTER the commit
