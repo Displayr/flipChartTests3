@@ -53,10 +53,11 @@ jobs:
           name: "Check package"
           command: R -q -e 'rcmdcheck::rcmdcheck(args = c("--no-manual", "--ignore-vignettes", "--no-tests"), build_args = c("--no-build-vignettes"))'
 
+      # Don't fail build if tests fail so that snapshots are saved at later step
       - run:
           name: "Run unit tests"
           no_output_timeout: 80m
-          command: R -e 'q(status = flipDevTools::RunTestsOnCircleCI(), save = "no")'
+          command: R -e 'flipDevTools::RunTestsOnCircleCI()'
 
       - store_test_results:
           path: testthat.xml
