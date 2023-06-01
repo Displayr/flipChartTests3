@@ -14,5 +14,6 @@ if (identical(Sys.getenv("CIRCLECI"), "true"))
     out.file <- paste0("reports/test_results", Sys.getenv("CIRCLE_NODE_INDEX"), ".xml")
     exit.code <- flipDevTools::RunTestsOnCircleCI(filter = "^matrix",
                                                   load_package = "none", output_file = out.file)
-    q(status = exit.code, save = "no")
+    ## Ignore exit code so job continues to save snapshot step
+    ## q(status = exit.code, save = "no")
 }
