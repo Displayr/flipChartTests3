@@ -1,5 +1,6 @@
 context("Vector data")	
 library(flipStandardCharts)	
+library(flipChartTests)
 
 # Set up various data types to test	
 # Names are used directory in filenames so keep punctuation use minimal	

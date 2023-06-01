@@ -1,4 +1,7 @@
 context("Multicolor charts")
+library(flipStandardCharts)
+library(flipChartTests)
+
 set.seed(3363630)
 
 funcs <- c("BarMultiColor")

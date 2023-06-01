@@ -1,4 +1,6 @@
 context("Small multiple chart options")
+library(flipStandardCharts)
+library(flipChartTests)
 
 # Data sets to check
 # These tests are based on test-stacked.R

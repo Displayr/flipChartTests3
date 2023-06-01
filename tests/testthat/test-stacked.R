@@ -1,4 +1,6 @@
 context("Stacked Charts")
+library(flipStandardCharts)
+library(flipChartTests)
 
 # data sets to check
 set.seed(122333)
