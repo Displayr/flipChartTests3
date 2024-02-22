@@ -27,7 +27,7 @@ workflows:
     jobs:
       - r-packages/build_and_check_package:
           executor: << pipeline.parameters.executor >>
-          resource-class: small
+          resource_class: small
           name: BuildAndCheckPackage
           context:
             - rviz_packages
