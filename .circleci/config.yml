@@ -37,7 +37,7 @@ workflows:
       - r-packages/test_package:
           executor: << pipeline.parameters.executor >>
           resource_class: small
-          num_executors: 2
+          num_executors: 4
           name: TestPackage
           save_snapshots: << pipeline.parameters.save-snapshots >>
           requires:
