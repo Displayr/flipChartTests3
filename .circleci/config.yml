@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  r-packages: displayr/r-packages@dev:alpha
+  r-packages: displayr/r-packages@dev:dpi-5055
 parameters:
   trigger-message:
     type: string
@@ -31,6 +31,7 @@ workflows:
           name: BuildAndCheckPackage
           context:
             - rviz_packages
+            - r_packages
           remote_deps: << pipeline.parameters.remote-deps >>
           separate_test_job: true
           save_snapshots: false
@@ -44,3 +45,4 @@ workflows:
             - BuildAndCheckPackage
           context:
             - rviz_packages
+            - r_packages
